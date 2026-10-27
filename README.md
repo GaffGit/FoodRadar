@@ -24,19 +24,3 @@ Settings: restaurants to show, language (fi/en), opacity, font size, hiding rest
 without a menu, and *Start with Windows*. Other Semma restaurants can be added by their
 cost number (`costNumber` in the menu feed URL below).
 
-Settings and the last fetched menus are stored in `%APPDATA%\JYUMenuWidget`.
-Data comes from `https://www.semma.fi/menuapi/feed/json?costNumber=<n>&language=fi|en`, and for
-Compass Group restaurants such as Taide (`0301`) from the same path on `www.compass-group.fi`.
-
-## Prices
-
-Taide's prices come from the Compass Group feed. Semma's feed leaves prices empty, so the widget
-shows Semma's price list from 1.1.2026 instead (`SEMMA_PRICES` in `jyu_menu_widget.pyw`):
-
-| | Opiskelija | Jatko-opiskelija | Henkilökunta | Ulkopuolinen |
-|---|---|---|---|---|
-| Semma restaurants | 3,10 € | 6,30 € | 6,70 € | 9,00 € |
-| Rentukka, Ilokivi | 3,10 € | 6,30 € | 6,95 € | 9,00 € |
-
-These are hardcoded, so update them when Semma changes its prices. Normaalikoulu and restaurants
-added by number show no price unless their feed has one.
