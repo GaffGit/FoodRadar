@@ -24,3 +24,19 @@ Settings: restaurants to show, language (fi/en), opacity, font size, hiding rest
 without a menu, and *Start with Windows*. Other Semma restaurants can be added by their
 cost number (`costNumber` in the menu feed URL below).
 
+## Data sources
+
+The menus, opening times and prices shown in the widget are not our own. They are fetched
+from the restaurant operators' public menu feeds:
+
+- **[Semma](https://www.semma.fi/)** – Lozzi, Ilokivi, Tilia, Syke, Belvedere, Piato, Uno, Ylistö,
+  Rentukka and Normaalikoulu:
+  `https://www.semma.fi/menuapi/feed/json?costNumber=<n>&language=fi|en`
+- **[Compass Group](https://www.compass-group.fi/)** – Ravintola Taide (`0301`): the same path on
+  `www.compass-group.fi`
+
+The menus belong to these providers, and they decide what is in them. For allergies, diets and up-to-da
+te
+information, check the restaurant's own page (click its name in the widget) or ask the staff.
+This project is not affiliated with Semma, Compass Group or the University of Jyväskylä.
+
